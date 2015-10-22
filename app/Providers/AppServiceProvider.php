@@ -3,6 +3,7 @@
 namespace MarHue\CMSMigrations\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use MarHue\CMSMigrations\MigrationTool;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -16,6 +17,11 @@ class AppServiceProvider extends ServiceProvider
         $this->publishes(
             [__DIR__ . '/../../config/cms-migrations.php'  => config_path('cms-migrations.php')],
             'config'
+        );
+
+        $this->publishes(
+            [__DIR__ . '/../../storage/cms-migrations' => storage_path('cms-migrations')],
+            'storage'
         );
     }
 
@@ -43,5 +49,7 @@ class AppServiceProvider extends ServiceProvider
         $this->mergeConfigFrom(
             __DIR__ . '/../../config/filesystems.php', 'filesystems'
         );
+
+        $this->commands([MigrationTool::class]);
     }
 }
