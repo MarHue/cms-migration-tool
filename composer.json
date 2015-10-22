@@ -1,0 +1,22 @@
+{
+	"name": "marhue/cms-migration-tool",
+	"version": "0.0.1",
+	"description": "Basic tool for CMS-Migrations",
+	"license": "MIT",
+	"type": "project",
+	"require-dev": {
+		"phpunit/phpunit": "~4.0",
+		"phpspec/phpspec": "~2.1",
+		"squizlabs/php_codesniffer": "2.*",
+		"laravel/framework": "5.1.*"
+	},
+	"autoload": {
+		"psr-4": {
+			"CMSMigrationTool\\": "app/",
+			"MarHue\\Migrations\\JekyllKirby\\": "vendor/marhue/jekyll-kirby-migration/src"
+		}
+	},
+	"config": {
+		"preferred-install": "dist"
+	}
+}
