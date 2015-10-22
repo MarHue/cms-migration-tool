@@ -3,7 +3,7 @@
 namespace MarHue\CMSMigrations\Providers;
 
 use Illuminate\Support\ServiceProvider;
-use MarHue\CMSMigrations\MigrationTool\CMSMigrationTool;
+use MarHue\CMSMigrations\Console\Commands\CMSMigrationTool;
 
 class AppServiceProvider extends ServiceProvider
 {
