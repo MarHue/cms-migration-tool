@@ -1,6 +1,6 @@
 <?php
 
-namespace CMSMigrationTool\Providers;
+namespace MarHue\CMSMigrations\Providers;
 
 use Illuminate\Support\ServiceProvider;
 

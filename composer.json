@@ -12,8 +12,7 @@
 	},
 	"autoload": {
 		"psr-4": {
-			"CMSMigrationTool\\": "app/",
-			"MarHue\\Migrations\\JekyllKirby\\": "vendor/marhue/jekyll-kirby-migration/src"
+			"MarHue\\CMSMigrations\\": "app/"
 		}
 	},
 	"config": {

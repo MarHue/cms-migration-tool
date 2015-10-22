@@ -1,11 +1,11 @@
 <?php
 
-namespace CMSMigrationTool\Console\Commands;
+namespace MarHue\CMSMigrations\Console\Commands;
 
 // TODO
-use CMSMigrationTool\MigrationTool\Formats\BaseFormat;
+use MarHue\CMSMigrations\MigrationTool\Formats\BaseFormat;
 use Illuminate\Console\Command;
-use CMSMigrationTool\MigrationTool;
+use MarHue\CMSMigrations\MigrationTool;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Filesystem\Filesystem;
 use Illuminate\Support\Facades\Config;

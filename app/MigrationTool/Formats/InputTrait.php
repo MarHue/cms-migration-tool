@@ -1,5 +1,5 @@
 <?php
-namespace CMSMigrationTool\MigrationTool\Formats;
+namespace MarHue\CMSMigrations\MigrationTool\Formats;
 
 trait InputTrait
 {
